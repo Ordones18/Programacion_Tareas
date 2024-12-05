@@ -12,7 +12,6 @@ int main()
     const int estudiantes=20;
     float calificaciones[estudiantes];
     float nota1=0, nota2=0, nota3=0, notas_invalidas=0;
-    int resta;
     cout<<"***Bienvenido, vamos a calcular las notas de tus estudiantes***"<<endl;
     cout<<"Ingresa las calificaciones de 20 estudiantes en un rango de 0 - 10:"<<endl;
 
