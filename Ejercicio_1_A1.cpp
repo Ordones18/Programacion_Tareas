@@ -15,11 +15,11 @@ int main()
     cout<<"***Bienvenido, vamos a calcular las notas de tus estudiantes***"<<endl;
     cout<<"Ingresa las calificaciones de 20 estudiantes en un rango de 0 - 10:"<<endl;
 
-    for(int i=1;i<=estudiantes;i++)
+    for(int i=0;i<estudiantes;i++)
     {
-        cout<<"Estudiante "<<i<<endl; ; cin>>calificaciones[i];
+        cout<<"Estudiante "<<i+1<<endl; ; cin>>calificaciones[i];
     }
-    for(int i=0;i<=estudiantes;i++)
+    for(int i=0;i<estudiantes;i++)
     {
         if (calificaciones[i]>=0 && calificaciones[i]<=5)
         {
