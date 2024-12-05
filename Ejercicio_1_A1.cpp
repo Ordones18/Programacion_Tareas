@@ -10,8 +10,8 @@ using namespace std;
 int main()
 {
     const int estudiantes=20;
-    int calificaciones[estudiantes];
-    int nota1=0, nota2=0, nota3=0, notas_invalidas=0;
+    float calificaciones[estudiantes];
+    float nota1=0, nota2=0, nota3=0, notas_invalidas=0;
     cout<<"***Bienvenido, vamos a calcular las notas de tus estudiantes***"<<endl;
     cout<<"Ingresa las calificaciones de 20 estudiantes en un rango de 0 - 10:"<<endl;
 
