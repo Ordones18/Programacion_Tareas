@@ -11,7 +11,7 @@ int main()
 {
     const int estudiantes=20;
     int calificaciones[estudiantes];
-    int nota1=0, nota2=0, nota3=0;
+    int nota1=0, nota2=0, nota3=0, notas_invalidas=0;
     cout<<"***Bienvenido, vamos a calcular las notas de tus estudiantes***"<<endl;
     cout<<"Ingresa las calificaciones de 20 estudiantes en un rango de 0 - 10:"<<endl;
 
@@ -33,12 +33,14 @@ int main()
         {
             nota3++;
         }
-
+        else if (calificaciones[i]>=11)
+        {
+            notas_invalidas++;
+        }
     }
     cout<<"Los estudiantes con calificaciones de 0 - 5 son: "<<nota1<<endl;
     cout<<"Los estudiantes con calificaciones de 6 - 8 son: "<<nota2<<endl;
     cout<<"Los estudiantes con calificaciones de 9 - 10 son: "<<nota3<<endl;
-
-
+    cout<<"Ingresaste " << notas_invalidas<<" notas invalidas fuera del rango"<<endl;
 return 0;
 }
